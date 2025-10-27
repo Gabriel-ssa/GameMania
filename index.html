@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Mania</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header"> 
+        <nav>
+            <ul>
+                <nav class="logo-container search-container">
+                    <div class="menu">
+                      <button class="menu-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false"><img src="imagens/menu.png" alt="Menu" class="Botão de Menu"></button>
+                       <ul class="dropdown-menu">
+                         <li><a class="menu" href="#">Hardware</a></li>
+                         <li><a class="menu" href="#">Periféricos</a></li>
+                         <li><a class="menu" href="#">Computadores</a></li>
+                         <li><a class="menu" href="#">Monitores</a></li>
+                         <li><a class="menu" href="#">Cadeiras</a></li>
+                         <li><a class="menu" href="#">Gabinetes</a></li>
+                         <li><a class="menu" href="#">Video Games</a></li>
+                         <li><a class="menu" href="#">Acessórios</a></li>
+                         <li><a class="menu" href="#">Notebooks</a></li>
+                         <li><a class="menu" href="#">Promoções</a></li>
+                         <li><a class="menu" href="#">Frete Grátis</a></li>
+                         <li><a class="menu" href="#">Diversos</a></li>
+                        </ul>
+                    </div>
+                    
+                    <figure>
+                        <a href="index.html" class="logo-text">
+                            <img src="imagens/logo.png" alt="Logotipo do e-commerce GameMania" class="logo">
+
+                        </a>
+                    </figure>
+                    <form action="#" class="search-bar">
+                        <input type="text" placeholder="Pesquise seu Produto" class="search-input">
+                        <button type="submit" class="search-button"><img src="imagens/lupa2.png" class="search-image" alt="Imagem de Lupa para pesquisar produtos" ></button>
+                    </form>
+                    <nav class="icons-container"> 
+                
+                            <figure>
+                                <img src="imagens/carrinho.png" alt="Botão de carrinho de compras" class="carrinho1">
+                            </figure>
+                    </nav>
+                    
+                    <nav class="user-actions">
+                        <figure><img src="imagens/perfil.png" alt="Icone de Perfil para login de conta"></figure>
+                    </nav>
+                </nav>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <div id="carouselExampleIndicators" class="banner"></div>
+     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="imagens/imagem01.jpg" class="d-block w-100" alt="Imagem 1">
+    </div>
+    <div class="carousel-item">
+      <img src="imagens/imagem02.jpg" class="d-block w-100" alt="Imagem 2">
+    </div>
+    <div class="carousel-item">
+      <img src="imagens/imagem03.jpg" class="d-block w-100" alt="Imagem 3">
+    </div>
+    <div class="carousel-item">
+      <img src="imagens/imagem04.jpg" class="d-block w-100" alt="Imagem 4">
+    </div>
+    <div class="carousel-item">
+      <img src="imagens/imagem05.jpg" class="d-block w-100" alt="Imagem 5">
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+     <span class="visually-hidden">Voltar</span>
+     </button>
+     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+     <span class="carousel-control-next-icon" aria-hidden="true"></span>
+     <span class="visually-hidden">Próximo</span>
+      </button>
+     </div>
+     <nav class="session">
+        <section class="session-list">
+            
+            <article class="session-item">
+                <img src="imagens/sessao1.png" alt="Imagem da Sessão 1" class="session-image">
+                <h3 class="session-title">Processadores</h3>
+            </article>
+            <article class="session-item">
+                <img src="imagens/sessao2.png" alt="Imagem da Sessão 2" class="session-image">
+                <h3 class="session-title">Gabinetes</h3>
+            </article>
+            <article class="session-item">
+                <img src="imagens/sessao3.png" alt="Imagem da Sessão 3" class="session-image">
+                <h3 class="session-title">Monitores</h3>
+            </article>
+            <article class="session-item">
+                <img src="imagens/sessao4.png" alt="Imagem da Sessão 4" class="session-image">
+                <h3 class="session-title">Placas-Mães</h3>
+            </article>
+            <article class="session-item">
+                <img src="imagens/sessao5.png" alt="Imagem da Sessão 5" class="session-image">
+                <h3 class="session-title">Cadeiras</h3>
+            </article>
+            <button class="session-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="session-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+                  
+            
+        </section>
+     </nav>
+     
+     <nav class="produtos">
+                <h2>Produtos em Destaque</h2>
+                <section class="product-list">
+                    <article class="product-item">
+                        <img src="imagens/produto1.jpeg.png" alt="Imagem do Produto 1" class="product-image">
+                        <h3 class="product-title">Iphone 17 Pro Apple 256GB, Câmera Tripla Fusion de 43MP...</h3>
+                        <p class="product-price">R$ 10.349,10</p>
+                        <button class="add-to-cart"><img src="imagens/carrinho2.png">COMPRAR</button>
+                    </article>
+                    <article class="product-item">
+                        <img src="imagens/produto2.png" alt="Imagem do Produto 2" class="product-image">
+                        <h3 class="product-title">Headset Gamer Sem Fio Logitech G PRO X Wireless LIGHTSPEED...</h3>
+                        <p class="product-price">R$ 852,26</p>
+                        <button class="add-to-cart"><img src="imagens/carrinho2.png">COMPRAR</button>
+                    </article>
+                    <article class="product-item">
+                        <img src="imagens/produto3.png" alt="Imagem do Produto 3" class="product-image">
+                        <h3 class="product-title">Notebook Lenovo LOQ-E Core i5-12450HX, RTX 3050, 16GB RAM...</h3>
+                        <p class="product-price">R$ 4.399,00</p>
+                        <button class="add-to-cart"><img src="imagens/carrinho2.png">COMPRAR</button>
+                    </article>
+                    <article class="product-item">
+                        <img src="imagens/produto4.png" alt="Imagem do Produto 4" class="product-image">
+                        <h3 class="product-title">Fone de Ouvido Bluetooth Tz50 Clip, Visor Digital, Bateria De Até 7h...</h3>
+                        <p class="product-price">R$ 149,90</p>
+                        <button class="add-to-cart"><img src="imagens/carrinho2.png">COMPRAR</button>
+                    </article>
+                    <article class="product-item">
+                        <img src="imagens/produto5.png" alt="Imagem do Produto 5" class="product-image">
+                        <h3 class="product-title">Fonte MSI MAG A650BN, 650W, 80 Plus Bronze, PFC Ativo, Com...</h3>
+                        <p class="product-price">R$ 376,46</p>
+                        <button class="add-to-cart"><img src="imagens/carrinho2.png">COMPRAR</button>
+                    </article>
+                    <article class="product-item">
+                        <img src="imagens/produto6.png" alt="Imagem do Produto 6" class="product-image">
+                        <h3 class="product-title">Memória RAM para Notebook Husky, 16GB, 3200MHz, DDR4...</h3>
+                        <p class="product-price">R$ 315,68</p>
+                        <button class="add-to-cart"><img src="imagens/carrinho2.png">COMPRAR</button>
+                    </article>
+                    <article class="product-item">
+                        <img src="imagens/produto7.png" alt="Imagem do Produto 7" class="product-image">
+                        <h3 class="product-title">Placa-Mãe MSI A520M-A PRO, AMD AM4, mATX, DDR4, Preto...</h3>
+                        <p class="product-price">R$ 499,99</p>
+                        <button class="add-to-cart"><img src="imagens/carrinho2.png">COMPRAR</button>
+                    </article>
+                    <article class="product-item">
+                        <img src="imagens/produto8.png" alt="Imagem do Produto 8" class="product-image">
+                        <h3 class="product-title">Processador AMD Ryzen 5 5600GT
+3.6 GHz, (4.6GHz Max Turbo)...</h3>
+                        <p class="product-price">R$ 499,99</p>
+                        <button class="add-to-cart"><img src="imagens/carrinho2.png">COMPRAR</button>
+                    </article>
+                    <article class="product-item">
+                        <img src="imagens/produto9.png" alt="Imagem do Produto 9" class="product-image">
+                        <h3 class="product-title">Console Sony Playstation 5, Edição Digital, SSD 825GB, Con...</h3>
+                        <p class="product-price">R$ 3.626,07</p>
+                        <button class="add-to-cart"><img src="imagens/carrinho2.png">COMPRAR</button>
+                    </article>
+                    <article class="product-item">
+                        <img src="imagens/produto10.png" alt="Imagem do Produto 10" class="product-image">
+                        <h3 class="product-title">Placa de Vídeo XFX AMD RADEON RX 7600 Gaming Graphics Card, 8GB...</h3>
+                        <p class="product-price">R$ 2.352,93</p>
+                        <button class="add-to-cart"><img src="imagens/carrinho2.png">COMPRAR</button>
+                    </article>
+                </section>
+        </nav>
+        <footer class="site-footer">
+            <nav class="footer-content">
+                </section>
+                <section class="footer-section">
+                    <h2>Políticas</h2>
+                    <p><a href="#">Política de Privacidade</a></p>
+                    <p><a href="#">Termos de Serviço</a></p>
+                    <p><a href="#">Trocas e Devoluções</a></p>
+                </section>
+                <section class="footer-section">
+                    <h2>Ajuda</h2>
+                    <p><a href="#">Perguntas Frequentes</a></p>
+                    <p><a href="#">Suporte ao Cliente</a></p>
+                </section>
+                <section class="footer-section">
+                    <h2>Contatos</h2>
+                    <p>Email: atendimento@gamemania.com.br</p>
+                    <p>Telefone: (13) 1234-5678</p>
+                    <p>WhatsApp: (13) 1122-3344</p>
+                    <p>Horário de Atendimento: Seg a Sex, 9h às 18h.</p>
+                </section>
+                <section class="footer-section">
+                    <h2>Redes Sociais</h2>
+                    <p>Siga-nos nas redes sociais:</p>
+                    <ul class="social-media-links">
+                        <li><a href="#"><img src="imagens/facebooklogo.png" class="Tiktok-img">Facebook</a></li>
+                        <li><a href="#"><img src="imagens/tiktok.png">Tiktok</a></li>
+                        <li><a href="#"><img src="imagens/insta.png">Instagram</a></li>
+                        <li><a href="#"><img src="imagens/youtube.png">Youtube</a></li>
+                    </ul>
+                <section class="copyright">
+                    <p>&copy; 2025 Game Mania. Todos os direitos reservados.</p>
+                </section>
+            </nav>
+        </footer>
+                
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
