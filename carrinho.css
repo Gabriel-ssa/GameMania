@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -37,6 +36,7 @@
     width: 100%;
     padding: 0;
     background-color: #004EF6;
+    height: 80px;
 }
 
 .logo {
@@ -133,86 +133,6 @@
     
 }
 
-
-.session {
-    max-width: 1200px;
-    margin: 30px auto;
-    padding: 0 20px;
-    position: relative;
-    overflow: visible;
-
-}
-.session h2 {
-    font-size: 30px;
-    color: #000000;
-    margin-bottom: 25px;
-    text-align: center;
-}
-.session-list {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 10px;
-    
-}
-.session-list button {
-    background:none;
-    border: none;
-    cursor: pointer;
-    outline: black;
-    outline-width: medium;
-    align-items: center;
-    
-}
-.session-control-prev,
-.session-control-next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 44px;
-    height: 44px;
-    border: none;
-    border-radius: 50%;
-    background: rgba(0,0,0,0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 10;
-    cursor: pointer;
-    color: #fff;
-}
-.session-control-prev .carousel-control-prev-icon,
-.session-control-next .carousel-control-next-icon {
-    width: 50px;
-    height: 50px;
-    background-size: 100% 100%;
-    filter: invert(1);
-}
-.session-control-prev { left: -40px; }
-.session-control-next { right: -40px; }
-
-.session-item {
-    background: #ffffff;
-    border: 1px solid #e1e1e1;
-    border-radius: 10px;
-    padding: 15px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.session-title {
-    font-size: 20px;
-    font-weight: 500;
-    color: #000000;
-    margin-bottom: 10px;
-    text-align: center;
-}
-.session-image {
-    width: 100%;
-    height: 200px;
-    border-radius: 4px;
-    margin-bottom: 15px;
-    align-content: center;
-}
-
-
 .produtos {
     max-width: 1200px;
     margin: 40px auto;
@@ -223,12 +143,13 @@
     font-size: 30px;
     color: #000000;
     margin-bottom: 25px;
-    text-align: center;
+    text-align: left;
+    margin-left: -80px;
 }
 
 .product-list {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 10px;
 }
 
@@ -236,8 +157,11 @@
     background: #ffffff;
     border: 1px solid #e1e1e1;
     border-radius: 8px;
-    padding: 15px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 200px;
+    width: 500px;
+    padding: 15px;
+    margin-left: -80px;
 }
 
 .product-item:hover {
@@ -251,6 +175,7 @@
     object-fit: scale-down;
     border-radius: 4px;
     margin: 10px;
+    
 
 }
 
@@ -268,32 +193,42 @@
     margin-bottom: 15px;
 }
 
-.add-to-cart {
-    width: 100%;
-    padding: 5px;
-    background-color: #a72828;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 12px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    
-    
+.finalizar-compra {
+    display: flex;
+    justify-self: end;
+    margin-top: -400px;
+    margin-bottom: 50px;
+    border: 1px solid black;
+    border-radius: 8px;
+    width: 400px;
+    margin-right: 200px;
+    height: 200px;
 }
 
-.add-to-cart:hover {
-    background-color: #b36262;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(40, 167, 69, 0.2);
+.finalizar-compra h1 {
+    font-size: 30px;
+    color: #000000;
+    margin-top: 50px;
+    margin-left: 10px;
 }
 
+.btn-primary {
+    display: flex;
+    background-color: #004EF6; 
+    border-color: #004EF6;
+    width: 400px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: center;
+    margin-left: 901px;
+    margin-top: -30px;    
+}
 .site-footer {
     background-color: #004EF6;
     color: #ffffff;
     padding: 40px 20px;
-    margin-top: 40px;
+    margin-top: 400px;
 }
 
 .footer-content {
