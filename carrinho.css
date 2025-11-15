@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -40,7 +41,7 @@
 }
 
 .logo {
-    width: 150px;
+    width: 170px;
     height: auto;
     align-items: center;
     margin-top: 50px;
@@ -55,13 +56,7 @@
 }
 
 .search-input {
-    width: 100%;
     padding: 10px 50px 10px 15px; 
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    font-size: 14px;
-    background-color: #fff;
-    box-sizing: border-box;
 }
 
 .search-button {
@@ -196,7 +191,7 @@
 .finalizar-compra {
     display: flex;
     justify-self: end;
-    margin-top: -400px;
+    margin-top: -500px;
     margin-bottom: 50px;
     border: 1px solid black;
     border-radius: 8px;

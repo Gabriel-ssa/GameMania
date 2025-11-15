@@ -8,47 +8,46 @@
     <link rel="stylesheet" href="carrinho.css">
 </head>
 <body>
-    <header class="site-header"> 
+    <header class="site-header ps-5 pe-5"> 
         <nav>
-            <ul>
-                <nav class="logo-container search-container">
+            <ul class="list-unstyled">
+                <nav class="logo-container search-container d-flex align-items-center justify-content-center gap-4 w-100 p-0">
                     <div class="menu">
-                      <button class="menu-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false"><img src="imagens/menu.png" alt="Menu" class="Botão de Menu"></button>
+                      <button class="menu-btn ms-auto" type="button" data-bs-toggle="dropdown" aria-expanded="false"><img src="imagens/menu.png" alt="Menu"></button>
                        <ul class="dropdown-menu">
-                         <li><a class="menu" href="#">Hardware</a></li>
-                         <li><a class="menu" href="#">Periféricos</a></li>
-                         <li><a class="menu" href="#">Computadores</a></li>
-                         <li><a class="menu" href="#">Monitores</a></li>
-                         <li><a class="menu" href="#">Cadeiras</a></li>
-                         <li><a class="menu" href="#">Gabinetes</a></li>
-                         <li><a class="menu" href="#">Video Games</a></li>
-                         <li><a class="menu" href="#">Acessórios</a></li>
-                         <li><a class="menu" href="#">Notebooks</a></li>
-                         <li><a class="menu" href="#">Promoções</a></li>
-                         <li><a class="menu" href="#">Frete Grátis</a></li>
-                         <li><a class="menu" href="#">Diversos</a></li>
+                         <li><a class="menu dropdown-item" href="#">Hardware</a></li>
+                         <li><a class="menu dropdown-item" href="#">Periféricos</a></li>
+                         <li><a class="menu dropdown-item" href="#">Computadores</a></li>
+                         <li><a class="menu dropdown-item" href="#">Monitores</a></li>
+                         <li><a class="menu dropdown-item" href="#">Cadeiras</a></li>
+                         <li><a class="menu dropdown-item" href="#">Gabinetes</a></li>
+                         <li><a class="menu dropdown-item" href="#">Video Games</a></li>
+                         <li><a class="menu dropdown-item" href="#">Acessórios</a></li>
+                         <li><a class="menu dropdown-item" href="#">Notebooks</a></li>
+                         <li><a class="menu dropdown-item" href="#">Promoções</a></li>
+                         <li><a class="menu dropdown-item" href="#">Frete Grátis</a></li>
+                         <li><a class="menu dropdown-item" href="#">Diversos</a></li>
                         </ul>
                     </div>
                     
-                    <figure>
-                        <a href="index.html"  class="logo-text">
+                    <figure class="mb-3">
+                        <a href="index.html" class="logo-text">
                             <img src="imagens/logo.png" alt="Logotipo do e-commerce GameMania" class="logo">
 
                         </a>
                     </figure>
                     <form action="#" class="search-bar">
-                        <input type="text" placeholder="Pesquise seu Produto" class="search-input">
-                        <button type="submit" class="search-button"><img src="imagens/lupa2.png" class="search-image" alt="Imagem de Lupa para pesquisar produtos" ></button>
+                        <input type="text" placeholder="Pesquise seu Produto" class="search-input form-control">
+                        <button type="submit" class="search-button"><img src="imagens/lupa2.png" class="search-image" alt="Pesquisar"></button>
                     </form>
-                    <nav class="icons-container"> 
-                
-                            <figure>
-                                <img src="imagens/carrinho.png" alt="Botão de carrinho de compras" class="carrinho1">
-                            </figure>
+                    <nav class="icons-container d-flex align-items-center gap-3"> 
+                        <figure class="mb-2">
+                            <a href="carrinho.html" class="carrinho mb-3"><img src="imagens/carrinho.png" alt="Carrinho" class="carrinho1"></a>
+                        </figure>
                     </nav>
                     
-                    <nav class="user-actions">
-                        <figure><img src="imagens/perfil.png" alt="Icone de Perfil para login de conta"></figure>
+                    <nav class="user-actions d-flex align-items-center gap-2 mb-2">
+                        <figure class="m-0"><a href="login.html" class="login"><img src="imagens/perfil.png" alt="Perfil"></a></figure>
                     </nav>
                 </nav>
             </ul>
@@ -58,60 +57,64 @@
     <nav class="produtos">
                 <h2>Meu Carrinho</h2>
                 <section class="product-list">
-                    <article class="product-item">
+                    <article class="product-item mb-3">
                         <img src="imagens/produto1.jpeg.png" alt="Imagem do Produto 1" class="product-image">
                         <h3 class="product-title">Iphone 17 Pro Apple 256GB, Câmera Tripla Fusion de 43MP...</h3>
                         <p class="product-price">R$ 10.349,10</p>
                     </article>
-                    <article class="product-item">
+                    <article class="product-item mb-5">
                         <img src="imagens/produto2.png" alt="Imagem do Produto 2" class="product-image">
                         <h3 class="product-title">Headset Gamer Sem Fio Logitech G PRO X Wireless LIGHTSPEED...</h3>
                         <p class="product-price">R$ 852,26</p>
                     </article>
                 </section>
     </nav>
-    <nav class="finalizar-compra">
+    <nav class="finalizar-compra mb-5">
         <h1><p>R$ 10.349,10</p>
         <p>R$   852,26</p>     
         <p>Total: 11.201,36</p></h1>
         
     </nav>
         <button class="btn btn-primary">Finalizar Compra</button>        
-<footer class="site-footer">
-            <nav class="footer-content">
-                </section>
+<footer class="site-footer pt-5 ">
+            <nav class="footer-content mx-auto px-5 mb-4">
                 <section class="footer-section">
-                    <h2>Políticas</h2>
+                    <h2 class="mb-3">Políticas</h2>
                     <p><a href="#">Política de Privacidade</a></p>
                     <p><a href="#">Termos de Serviço</a></p>
                     <p><a href="#">Trocas e Devoluções</a></p>
                 </section>
                 <section class="footer-section">
-                    <h2>Ajuda</h2>
+                    <h2 class="mb-3">Ajuda</h2>
                     <p><a href="#">Perguntas Frequentes</a></p>
                     <p><a href="#">Suporte ao Cliente</a></p>
                 </section>
                 <section class="footer-section">
-                    <h2>Contatos</h2>
+                    <h2 class="mb-3">Contatos</h2>
                     <p>Email: atendimento@gamemania.com.br</p>
                     <p>Telefone: (13) 1234-5678</p>
                     <p>WhatsApp: (13) 1122-3344</p>
                     <p>Horário de Atendimento: Seg a Sex, 9h às 18h.</p>
                 </section>
                 <section class="footer-section">
-                    <h2>Redes Sociais</h2>
-                    <p>Siga-nos nas redes sociais:</p>
-                    <ul class="social-media-links">
-                        <li><a href="#"><img src="imagens/facebooklogo.png" class="Tiktok-img">Facebook</a></li>
-                        <li><a href="#"><img src="imagens/tiktok.png">Tiktok</a></li>
-                        <li><a href="#"><img src="imagens/insta.png">Instagram</a></li>
-                        <li><a href="#"><img src="imagens/youtube.png">Youtube</a></li>
+                    <h2 class="mb-3 ms-3">Redes Sociais</h2>
+                    <p class="mb-3 ms-3">Siga-nos nas redes sociais:</p>
+                    <ul class="social-media-links list-unstyled ms-3 gap-3 d-flex">
+                        <li><a href="#" class="d-flex align-items-center gap-2"><img src="imagens/facebooklogo.png">Facebook</a></li>
+                        <li><a href="#" class="d-flex align-items-center gap-2"><img src="imagens/tiktok.png">Tiktok</a></li>
+                        <li><a href="#" class="d-flex align-items-center gap-2"><img src="imagens/insta.png">Instagram</a></li>
+                        <li><a href="#" class="d-flex align-items-center gap-2"><img src="imagens/youtube.png">Youtube</a></li>
                     </ul>
-                <section class="copyright">
-                    <p>&copy; 2025 Game Mania. Todos os direitos reservados.</p>
+
                 </section>
             </nav>
+            <section class="copyright text-center pt-3 border-top">
+                <p class="m-0">&copy; 2025 Game Mania. Todos os direitos reservados.</p>
+            </section>
         </footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script> 
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
