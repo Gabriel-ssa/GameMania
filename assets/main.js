@@ -327,4 +327,70 @@ $(function () {
     renderCart(); 
 });
 
+
+function validateEmail(email) {
+    
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(String(email).trim());
+}
+
+function validatePassword(password) {
+    
+    return password && password.length >= 4;
+}
+
+
+$(document).on('submit', 'form', function (e) {
+    const $form = $(this);
+    const formId = $form.attr('id') || '';
+
+        if (formId.includes('login') || $form.find('#username').length) {
+        e.preventDefault();
+        const username = $form.find('#username').val().trim();
+        const password = $form.find('#password').val().trim();
+
+        if (!username) {
+            showToast('Por favor, preencha o nome de usuário ou e-mail.');
+            return;
+        }
+        if (!validatePassword(password)) {
+            showToast('A senha deve ter no mínimo 4 caracteres.');
+            return;
+        }
+
+        showToast('Login realizado com sucesso!');
+        
+    }
+
+    
+    else if (formId.includes('cadastro') || $form.find('#email').length) {
+        e.preventDefault();
+        const name = $form.find('#name').val().trim();
+        const email = $form.find('#email').val().trim();
+        const password = $form.find('#password').val().trim();
+        const confirmPassword = $form.find('#confirm-password').val().trim();
+
+        if (!name) {
+            showToast('Por favor, preencha o nome.');
+            return;
+        }
+        if (!validateEmail(email)) {
+            showToast('Por favor, insira um e-mail válido.');
+            return;
+        }
+        if (!validatePassword(password)) {
+            showToast('A senha deve ter no mínimo 4 caracteres.');
+            return;
+        }
+        if (password !== confirmPassword) {
+            showToast('As senhas não correspondem.');
+            return;
+        }
+
+        showToast('Cadastro realizado com sucesso!');
+        
+    }
+});
+
+
 })();   
