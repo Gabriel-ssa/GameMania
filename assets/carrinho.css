@@ -181,6 +181,10 @@
     margin-bottom: 10px;
 }
 
+.verprodutos {
+    margin-left: 170px;
+}
+
 .product-price {
     font-size: 13px;
     color: #000000;
@@ -216,7 +220,6 @@
     font-size: 20px;
     font-weight: bold;
     justify-content: center;
-    margin-left: 901px;
     margin-top: -30px;    
 }
 .site-footer {
